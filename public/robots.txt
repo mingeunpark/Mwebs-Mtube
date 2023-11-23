@@ -1,0 +1,6 @@
+# https://www.robotstxt.org/robotstxt.html
+# bot 같은게 들어와서 가져갈 수 있는 정보는 가져가게 함
+# 중요한 정보는 못가져가게 여기에 작업
+User-agent: * 
+Disallow:
+

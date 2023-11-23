@@ -1,0 +1,6 @@
+#public에 favicon.svg 파일을 만들겠습니다. 기존에는 favicon.ico 파일이 있었지만, 저는 svg 파일로 대체하겠습니다
+#[파비콘 (favicon)이란?] 파비콘 (favorites+icon)은 인터넷 웹 브라우저의 주소창에 접속했을 때, 상단 탭의 왼쪽에 작게 보여지는 아이콘을 말합니다.
+#즐겨찾기나 바로가기를 설정할 때도 사용되니 웹사이트를 대표하는 아이콘이라고 생각해주시면 됩니다.
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/sbg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M14.2929 5.29289C14.6834 4.90237 15.3166 4.90237 15.70715.29289L21.7071 11.2929C22.097">
+</svg>
