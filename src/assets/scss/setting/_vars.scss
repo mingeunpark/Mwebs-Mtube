@@ -3,18 +3,23 @@
     --mainfont-nexon: "nexonLv1";
 
     --black: #000;
-    --black100: #000;
-    --black200: #000;
-    --black300: #000;
-    --black400: #000;
-    --black500: #000;
+    --black100: #100;
+    --black200: #200;
+    --black300: #300;
+    --black400: #400;
+    --black500: #500;
+
+    --blackAlpha100: rgba(221, 219, 219, 0.089)212;
+
 
     --white: #fff;
-    --white100: #fff;
-    --white200: #fff;
-    --white300: #fff;
-    --white400: #fff;
-    --white500: #fff;
+    --white100: #999;
+    --white200: #888;
+    --white300: #777;
+    --white400: #666;
+    --white500: #555;
+
+    --red: #f00;
 
     // 폰트 셋팅
     font-family: var(--mainfont-nanum), var(--mainfont-nexon); //기본폰트 나눔 서브 폰트는 넥슨

@@ -4,6 +4,8 @@
     top: 0;
     width: 260px;
     height: 100%;
+    //헤더스크롤
+    overflow-y: auto;
     z-index: 10000;
     background-color: #000;
 }
@@ -13,7 +15,7 @@
     min-height: 100vh;
     margin: 0 auto;
     padding-left: 260px;
-    background-color: #111;
+    background-color: #555;
 }
 
 #footer {
