@@ -3,7 +3,10 @@ import Main from '../components/section/Main'
 
 const Port = () => {
   return (
-    <Main>
+    <Main 
+      title="mTube" 
+      description="포폴"
+    >
       Port
     </Main>
   )

@@ -3,7 +3,10 @@ import Main from '../components/section/Main'
 
 const Home = () => {
   return (
-    <Main>
+    <Main 
+      title="Hello Home" 
+      description="Hello 유튜브"
+    >
       Home
     </Main>
   )

@@ -3,7 +3,10 @@ import Main from '../components/section/Main'
 
 const Not = () => {
   return (
-    <Main>
+    <Main 
+      title="mTube" 
+      description="not"
+    >
       Not
     </Main>
   )

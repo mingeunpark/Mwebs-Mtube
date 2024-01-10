@@ -3,7 +3,10 @@ import Main from '../components/section/Main'
 
 const Video = () => {
   return (
-    <Main>
+    <Main 
+      title="mTube" 
+      description="비디오"
+    >
       Video
     </Main>
   )
