@@ -8,11 +8,30 @@ import { fetchFromAPI } from '../utils/api'
 const Search = () => {
     const { searchID } = useParams();
     const [ videos, setVideos ] = useState([]);
+
+    const [ nextPageToken, setNextPageToken] = useState(null);
     
     useEffect(() => {
-        fetchFromAPI(`search?part=snippet&q=${searchID}`)
-            .then((data) => setVideos(data.items))
+        setVideos([]);
+        fetchVideos(searchID);
     }, [searchID]);
+
+    const fetchVideos = (query, pageToken = '') => {
+        fetchFromAPI(`search?part=snippet&q=${query}&pageToken=${pageToken}`)
+            .then((data) => {
+                setNextPageToken(data.nextPageToken);
+                setVideos((prevVideos) => [...prevVideos, ...data.items]);
+            })
+            .catch((error) => {
+                console.error('Error fetching data:', error);
+            });
+    };
+
+    const handleLoadMore = () => {
+        if (nextPageToken) {
+            fetchVideos(searchID, nextPageToken);
+        }
+    };
 
     return (
         <Main 
@@ -20,8 +39,14 @@ const Search = () => {
             description="유튜브 검색 결과 페이지입니다.">
             
             <section id='searchPage'>
+                <h2>🤠 <em>{searchID}</em> 검색 결과입니다.</h2>
                 <div className="video__inner search">
                     <VideoSearch videos={videos} />
+                </div>
+                <div className="video__more">
+                    {nextPageToken && (
+                        <button onClick={handleLoadMore}>더 보기</button>
+                    )}
                 </div>
             </section>
         </Main>
