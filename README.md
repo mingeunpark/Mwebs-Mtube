@@ -70,11 +70,11 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 
-# 유튜브 사이트 만들기
-이 강의는 React 프레임워크와 YouTube API를 이용하여 자신만의 간단한 영상 사이트를 만듭니다.
-React의 기본 개념을 이해하고, 컴포넌트를 구조화하고 상태를 관리하는 방법을 학습하며, YouTube Data API를
-활용하여 외부 데이터를 가져오는 방법을 익히고, API 응답을 처리하여 사용자에게
-의미 있는 정보를 제공하는 방법을 이해합니다.
+# 유튜브 사이트
+React 프레임워크와 YouTube API를 이용하여 영상 사이트를 만듭니다.
+React의 개념 이해 컴포넌트를 구조화, 상태 관리, YouTube Data API 활용
+외부 데이터를 가져오는 방법, API 응답 처리하여 
+의미 있는 정보를 제공한다
 
 ## 완성작 보기
 미리 보기 : https://mgtubemg.netlify.app/
